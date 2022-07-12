@@ -9,6 +9,35 @@ defmodule Maths do
 		3.14159265358979323846	
 	end
 
+	def sin(x) do
+		pi = getpi
+		x =rem(x,2*pi)
+		precision = 50
+		
+	end
+	
+
+
+	# factorial is x = x * every descending positive integer
+	def factorialloop(xn,x) when x >= 2 do
+		xn = xn * x
+		factorialloop(xn,x-1)
+	end
+	def factorialloop(xn,x) when x == 0 do
+		1
+	end 
+	def factorialloop(xn,x) when x == 1 do
+		xn = xn * x
+	end
+	def factorial(x) when x == 0 do
+		1
+	end	
+	def factorial(x) do
+		factorialloop(x,x-1)
+	end
+	#factorial is x = x* every descending positive integer
+	# example 5! = 5 * 4 * 3 * 2 * 1 = 120	
+
 	#log2 tells you how many 2s you need for a certain number example: log2(8) = 3  --> 2*2*2 = 8 
 	def log2(x) do
 		
@@ -33,9 +62,8 @@ defmodule Maths do
 		xn = xn/x
 		xn = xn/x
 	end
-
 	#squares ntimes	
-	
+
 	def area_of_square(a) do
 		a*a
 	end

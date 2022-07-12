@@ -1,0 +1,3 @@
+# Mathelixir
+This is just a compilation of well known math Stuff recreated in elixir as a little exercise.
+Also i have no clue how to write proper elixir ...
